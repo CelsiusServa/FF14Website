@@ -1,0 +1,23 @@
+{
+  "name": "FF14Website",
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "directory": "FF14Website/app",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.7",
+    "jquery": "~2.1.4",
+    "angular-route": "~1.4.7",
+    "angular-material": "~0.11.4",
+    "sugar": "~1.4.1"
+  }
+}

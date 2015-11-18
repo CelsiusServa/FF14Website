@@ -1,0 +1,12 @@
+<md-toolbar style="position:relative;">
+    <div class="md-toolbar-tools">
+        <img src="assets/images/logo.png" class="logo">
+        <h2 style="cursor: pointer;">
+            <span ng-click="topMenuCtrl.titleClicked()">{{topMenuCtrl.title}}</span>
+        </h2>
+        <span flex></span>
+        <md-button class="md-raised md-accent" aria-label="Raidnet" ng-click="topMenuCtrl.raidnetClicked()">
+            Raidnet
+        </md-button>
+    </div>
+</md-toolbar>

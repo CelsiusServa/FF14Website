@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link href="bower_components/angular-material/angular-material.css" rel="stylesheet" type="text/css">
+    <link href="app.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-aria/angular-aria.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-material/angular-material.js"></script>
+    <script src="bower_components/sugar/release/sugar.min.js"></script>
+    <script src="app.js"></script>
+
+    <script src="pages/pages.js"></script>
+    <script src="pages/main/main.js"></script>
+    <script src="pages/home/home.js"></script>
+    <script src="pages/raidnet/raidnet.js"></script>
+
+    <script src="components/components.js"></script>
+    <script src="components/top-menu/top-menu.directive.js"></script>
+    <script src="components/introduction/introduction.directive.js"></script>
+    <script src="components/side-nav/side-nav.directive.js"></script>
+    <script src="components/highscore/highscore.directive.js"></script>
+    <script src="components/top-highscore/top-highscore.directive.js"></script>
+
+    <script src="utils/utils.js"></script>
+    <script src="utils/highscore/highscore.service.js"></script>
+    <script src="utils/job/job.service.js"></script>
+
+</head>
+<body ng-app="finalFantasy" class="bgc">
+    <div layout-fill ng-controller="MainController as mainCtrl">
+        <title>{{mainCtrl.title}}</title>
+        <ff-top-menu title="mainCtrl.title"></ff-top-menu>
+        <div style="height:calc(100% - 64px)">
+            <md-content layout-fill>
+                <div layout-fill ng-view></div>
+            </md-content>
+        </div>
+    </div>
+</body>
+</html>

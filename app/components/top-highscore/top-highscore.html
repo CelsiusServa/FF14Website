@@ -1,0 +1,34 @@
+<div ng-if="!topHighscoreCtrl.players.isEmpty()">
+    <div layout="row" class="highscore">
+        <div flex="15" style="margin-left:10px; display:flex; align-items: center;">
+            <h3>Job</h3>
+        </div>
+        <div flex="40">
+            <h3>Name</h3>
+        </div>
+        <div flex="10" layout-align="cb">
+            <h3>DPS</h3>
+        </div>
+        <div flex="25">
+            <h3>Static</h3>
+        </div>
+    </div>
+    <md-divider ng-if="!$last"></md-divider>
+    <div ng-repeat="highscore in topHighscoreCtrl.players | orderBy:['-dps', 'name']">
+        <div layout="row" class="highscore">
+            <div flex="15" style="margin-left:10px; display:flex; align-items: center;">
+                <span class="flair" ng-class="'flair-' + highscore.job"></span>
+            </div>
+            <div flex="40" ng-class="'text-' + highscore.job">
+                <h4>{{ highscore.name }}</h4>
+            </div>
+            <div flex="10">
+                <h3>{{ highscore.dps }}</h3>
+            </div>
+            <div flex="25">
+                <h4>{{ highscore.static }}</h4>
+            </div>
+        </div>
+        <md-divider ng-if="!$last"></md-divider>
+    </div>
+</div>

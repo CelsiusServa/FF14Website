@@ -1,0 +1,8 @@
+<md-sidenav class="md-sidenav-left md-whiteframe-z2 md-hue-3" md-is-locked-open="$mdMedia('gt-lg')" style="position:fixed; top:64px; height:100%;">
+    <md-content class="md-hue-3">
+        <md-list-item ng-repeat="element in sideNavCtrl.elements" ng-click="sideNavCtrl.elementClicked(element)">
+            <p>{{ element }}</p>
+            <md-divider></md-divider>
+        </md-list-item>
+    </md-content>
+</md-sidenav>

@@ -1,0 +1,85 @@
+<md-content flex layout-padding>
+    <div layout="row">
+        <div flex-offset="25" flex="50">
+            <md-content flex class="md-hue-3">
+                <div layout="column">
+                    <img ng-src="assets/images/{{highscoreCtrl.highscores.image}}">
+                    <md-tabs class="md-primary" md-dynamic-height md-border-bottom>
+                        <md-tab label="Totals">
+                            <md-chips ng-model="highscoreCtrl.selectedPlayers" md-autocomplete-snap md-require-match="true">
+                                <md-autocomplete
+                                        md-search-text="highscoreCtrl.playerSearchText"
+                                        md-items="item in highscoreCtrl.searchPlayer()"
+                                        md-item-text="item.name"
+                                        placeholder="Filter by player">
+                                    <span>
+                                        <span md-highlight-text="highscoreCtrl.searchText">{{item.name}}</span>
+                                    </span>
+                                </md-autocomplete>
+                                <md-chip-template>
+                                    <span>
+                                        <strong>{{$chip.name}}</strong>
+                                    </span>
+                                </md-chip-template>
+                            </md-chips>
+                            <md-chips ng-model="highscoreCtrl.selectedJobs" md-autocomplete-snap md-require-match="true">
+                                <md-autocomplete
+                                        md-search-text="highscoreCtrl.jobSearchText"
+                                        md-items="item in highscoreCtrl.searchJob()"
+                                        md-item-text="item.name"
+                                        placeholder="Filter by job">
+                                    <span class="flair-small job" ng-class="'flair-' + item.ui"></span>
+                                    <strong>{{item.name}}</strong>
+                                </md-autocomplete>
+                                <md-chip-template>
+                                    <span>
+                                        <span class="flair-small" ng-class="'flair-' + $chip.ui"></span>
+                                    </span>
+                                </md-chip-template>
+                            </md-chips>
+                            <div layout="row" class="highscore">
+                                <div flex="15" style="margin-left:10px; display:flex; align-items: center;">
+                                    <h3>Job</h3>
+                                </div>
+                                <div flex="40">
+                                    <h3>Name</h3>
+                                </div>
+                                <div flex="10" layout-align="cb">
+                                    <h3>DPS</h3>
+                                </div>
+                                <div flex="25">
+                                    <h3>Static</h3>
+                                </div>
+                            </div>
+                            <md-divider ng-if="!$last"></md-divider>
+                            <div ng-repeat="highscore in highscoreCtrl.filteredHighscores | orderBy:['-dps', 'name']">
+                                <div layout="row" class="highscore">
+                                    <div flex="15" style="margin-left:10px; display:flex; align-items: center;">
+                                        <span class="flair" ng-class="'flair-' + highscore.job"></span>
+                                    </div>
+                                    <div flex="40" ng-class="'text-' + highscore.job">
+                                        <h4>{{ highscore.name }}</h4>
+                                    </div>
+                                    <div flex="10">
+                                        <h3>{{ highscore.dps }}</h3>
+                                    </div>
+                                    <div flex="25">
+                                        <h4>{{ highscore.static }}</h4>
+                                    </div>
+                                </div>
+                                <md-divider ng-if="!$last"></md-divider>
+                            </div>
+                        </md-tab>
+                        <md-tab label="Top 5">
+                            <md-tabs class="md-primary" md-dynamic-height md-border-bottom>
+                                <md-tab label="{{job.name}}" ng-repeat="job in highscoreCtrl.jobs">
+                                    <ff-top-highscore highscores="highscoreCtrl.highscores" job="job" top="5"></ff-top-highscore>
+                                </md-tab>
+                            </md-tabs>
+                    </md-tabs>
+                </div>
+            </md-content>
+        </div>
+        <div flex></div>
+    </div>
+</md-content>
