@@ -19,5 +19,3 @@ app.use(express.static(__dirname + '/app'));
 app.use('/app', express.static(__dirname + '/app'));
 app.use('/app', serveIndex(__dirname + '/app', { icons: true }));
 app.use('/api/updates', express.static(__dirname + '/releases'));
-
-var secureServer = http.createServer(app).listen('4040');
