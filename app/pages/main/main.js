@@ -6,7 +6,7 @@
 
     function controller($location) {
         var vm = this;
-        vm.title = "Mog Knights";
+        vm.title = "Sodium Chloride";
 
         function init(){
         }
