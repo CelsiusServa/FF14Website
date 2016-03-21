@@ -12,9 +12,7 @@
     "forever": "^0.14.1"
   },
   "scripts": {
-    "start-server": "forever start ff14-webserver.js",
-    "stop-server": "forever stop ff14-webserver.js",
-	"list": "forever list"
+    "start": "node ff14-webserver.js"
   },
   "author": "Celsius Serva"
 }

@@ -15,7 +15,7 @@ var allowCrossDomain = function(req, res, next) {
 
 app.use(allowCrossDomain);
 app.use(compression());
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/app'));
 app.use('/app', express.static(__dirname + '/app'));
 app.use('/app', serveIndex(__dirname + '/app', { icons: true }));
 app.use('/api/updates', express.static(__dirname + '/releases'));
