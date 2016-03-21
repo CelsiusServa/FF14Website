@@ -12,7 +12,7 @@
     "forever": "^0.14.1"
   },
   "scripts": {
-    "start": "node ff14-webserver.js"
+    "start": "bower install & node ff14-webserver.js"
   },
   "author": "Celsius Serva"
 }

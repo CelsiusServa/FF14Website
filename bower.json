@@ -19,5 +19,8 @@
     "angular-route": "~1.4.7",
     "angular-material": "~0.11.4",
     "sugar": "~1.4.1"
+  },
+  "resolutions": {
+    "angular": "1.5.2"
   }
 }
