@@ -21,6 +21,11 @@
                 controller: 'RaidnetController',
                 controllerAs: 'raidnetCtrl'
             })
+            .when('/article', {
+                templateUrl: 'pages/article/article.html',
+                controller: 'ArticleController',
+                controllerAs: 'articleCtrl'
+            })
             .otherwise({
                 redirectTo: '/home'
             });

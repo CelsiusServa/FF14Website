@@ -9,7 +9,6 @@
         vm.title = "Mog Knights";
 
         function init(){
-            $location.path('/raidnet');
         }
 
         init();

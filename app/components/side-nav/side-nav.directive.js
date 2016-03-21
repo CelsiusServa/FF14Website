@@ -8,21 +8,24 @@
                 scope: {
                 },
                 templateUrl: 'components/side-nav/side-nav.html',
-                controller: controller,
+                controller: ['$location', controller],
                 controllerAs: 'sideNavCtrl',
                 bindToController: true
             };
         });
 
 
-    function controller() {
+    function controller($location) {
         var vm = this;
 
-        vm.elements = [ "Titan", "Ifrit", "Garuda" ];
+        vm.articles = [
+            { title:'Titan', articleId: 'titan' },
+            { title:'Ifrit', articleId: 'ifrit' },
+            { title:'Garuda', articleId: 'garuda' }
+        ];
 
-        vm.elementClicked = function(element){
-            console.log(element);
+        vm.articleClicked = function(article){
+            $location.path("/article").search({articleId: article.articleId});
         }
-
     }
 }());

@@ -2,13 +2,11 @@
     "use strict";
 
     angular.module('finalFantasy.pages')
-        .controller('HomeController', ['$route', controller]);
+        .controller('ArticleController', controller);
 
     function controller($route) {
         var vm = this;
-
         var routeParams = $route.current.params;
-
-        vm.articleIndex = 'titanArticle';
+        vm.articleId = routeParams.articleId;
     }
 }());

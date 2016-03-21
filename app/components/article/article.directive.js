@@ -2,19 +2,23 @@
     "use strict";
 
     angular.module('finalFantasy.components')
-        .directive('ffIntroduction', function () {
+        .directive('ffArticle', function () {
             return {
                 restrict: 'E',
-                templateUrl: 'components/introduction/introduction.html',
+                scope: {
+                    articleId: '='
+                },
+                templateUrl: 'components/article/article.html',
                 controller: controller,
-                controllerAs: 'introductionCtrl',
+                controllerAs: 'ffArticleCtrl',
                 bindToController: true
             };
         });
 
-
     function controller() {
         var vm = this;
+
+        console.log(this.articleId);
     }
 }());
 

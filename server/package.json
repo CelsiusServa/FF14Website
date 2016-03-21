@@ -1,0 +1,20 @@
+{
+  "name": "ff14-website",
+  "version": "1.0.0",
+  "description": "ff14 website",
+  "main": "ff14-webserver.js",
+  "dependencies": {
+    "compression": "^1.5.2",
+    "express": "^4.12.4",
+    "serve-index": "^1.7.2"
+  },
+  "devDependencies": {
+    "forever": "^0.14.1"
+  },
+  "scripts": {
+    "start-server": "forever start ff14-webserver.js",
+    "stop-server": "forever stop ff14-webserver.js",
+	"list": "forever list"
+  },
+  "author": "Celsius Serva"
+}

@@ -17,7 +17,6 @@
             };
         });
 
-
     function controller($scope, jobService) {
         var vm = this;
         vm.jobs = jobService.getJobs();
