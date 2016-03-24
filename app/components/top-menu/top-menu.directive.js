@@ -23,7 +23,11 @@
             $location.path('/home');
         }
 
-        vm.raidnetClicked = function(){
+        vm.homeClicked = function(){
+            $location.path('/home');
+        }
+
+        vm.highscoresClicked = function(){
             $location.path('/raidnet');
         }
     }

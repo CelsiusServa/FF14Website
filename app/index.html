@@ -5,7 +5,10 @@
 
     <link href="bower_components/angular-material/angular-material.css" rel="stylesheet" type="text/css">
     <link href="app.css" rel="stylesheet" type="text/css">
+    <link href="images.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/angular/angular.js"></script>
@@ -34,15 +37,10 @@
     <script src="utils/job/job.service.js"></script>
 
 </head>
-<body ng-app="finalFantasy" class="bgc">
-    <div layout-fill ng-controller="MainController as mainCtrl">
+<body ng-app="finalFantasy">
+    <div ng-controller="MainController as mainCtrl">
         <title>{{mainCtrl.title}}</title>
-        <ff-top-menu title="mainCtrl.title"></ff-top-menu>
-        <div style="height:calc(100% - 64px)">
-            <md-content layout-fill>
-                <div layout-fill ng-view></div>
-            </md-content>
-        </div>
+        <div ng-view></div>
     </div>
 </body>
 </html>

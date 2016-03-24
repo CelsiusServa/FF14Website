@@ -1,0 +1,318 @@
+.flair-gridania{
+    background-position: 0 0;
+}
+
+.flair-limsa{
+    background-position: -60px 0;
+}
+
+.flair-uldah{
+    background-position: -120px 0;
+}
+
+.flair-paladin{
+    background-position: -180px 0;
+}
+
+.flair-blackmage{
+    background-position: -240px 0;
+}
+
+.flair-warrior{
+    background-position: -300px 0;
+}
+
+.flair-monk{
+    background-position: -360px 0;
+}
+
+.flair-dragoon{
+    background-position: -420px 0;
+}
+
+.flair-bard{
+    background-position: -480px 0;
+}
+
+.flair-whitemage{
+    background-position: -540px 0;
+}
+
+.flair-summoner{
+    background-position: -600px 0;
+}
+
+.flair-scholar{
+    background-position: -660px 0;
+}
+
+.flair-miner{
+    background-position: -720px 0;
+}
+
+.flair-botanist{
+    background-position: -780px 0;
+}
+
+.flair-fisher{
+    background-position: -840px 0;
+}
+
+.flair-carpenter{
+    background-position: -900px 0;
+}
+
+.flair-blacksmith{
+    background-position: -960px 0;
+}
+
+.flair-armorer{
+    background-position: -1020px 0;
+}
+
+.flair-goldsmith{
+    background-position: -1080px 0;
+}
+
+.flair-leatherworker{
+    background-position: -1140px 0;
+}
+
+.flair-weaver{
+    background-position: -1200px 0;
+}
+
+.flair-alchemist{
+    background-position: -1260px 0;
+}
+
+.flair-culinarian{
+    background-position: -1320px 0;
+}
+
+.flair-gladiator{
+    background-position: -1380px 0;
+}
+
+.flair-pugilist{
+    background-position: -1440px 0;
+}
+
+.flair-marauder{
+    background-position: -1500px 0;
+}
+
+.flair-lancer{
+    background-position: -1560px 0;
+}
+
+.flair-archer{
+    background-position: -1620px 0;
+}
+
+.flair-conjurer{
+    background-position: -1680px 0;
+}
+
+.flair-thaumaturge{
+    background-position: -1740px 0;
+}
+
+.flair-arcanist{
+    background-position: -1800px 0;
+}
+
+.flair-rogue{
+    background-position: -1860px 0;
+}
+
+.flair-ninja{
+    background-position: -1920px 0;
+}
+
+.flair-astrologian{
+    background-position: -1980px 0;
+}
+
+.flair-darkknight{
+    background-position: -2040px 0;
+}
+
+.flair-machinist{
+    background-position: -2100px 0;
+}
+
+.flair{
+    display: inline-block;
+    background-image: url("assets/images/class-symbols-mod.png");
+    vertical-align: middle;
+    margin-right: 3px;
+    margin-top: -3px;
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 40px;
+    border-width: 0;
+    padding: 0;
+    background-color: transparent;
+    text-indent: -9999px;
+}
+
+
+.flair-small.flair-gridania{
+    background-position: 0 0;
+}
+
+.flair-small.flair-limsa{
+    background-position: -30px 0;
+}
+
+.flair-small.flair-uldah{
+    background-position: -60px 0;
+}
+
+.flair-small.flair-paladin{
+    background-position: -90px 0;
+}
+
+.flair-small.flair-blackmage{
+    background-position: -120px 0;
+}
+
+.flair-small.flair-warrior{
+    background-position: -150px 0;
+}
+
+.flair-small.flair-monk{
+    background-position: -180px 0;
+}
+
+.flair-small.flair-dragoon{
+    background-position: -210px 0;
+}
+
+.flair-small.flair-bard{
+    background-position: -240px 0;
+}
+
+.flair-small.flair-whitemage{
+    background-position: -270px 0;
+}
+
+.flair-small.flair-summoner{
+    background-position: -300px 0;
+}
+
+.flair-small.flair-scholar{
+    background-position: -330px 0;
+}
+
+.flair-small.flair-miner{
+    background-position: -360px 0;
+}
+
+.flair-small.flair-botanist{
+    background-position: -390px 0;
+}
+
+.flair-small.flair-fisher{
+    background-position: -420px 0;
+}
+
+.flair-small.flair-carpenter{
+    background-position: -450px 0;
+}
+
+.flair-small.flair-blacksmith{
+    background-position: -480px 0;
+}
+
+.flair-small.flair-armorer{
+    background-position: -510px 0;
+}
+
+.flair-small.flair-goldsmith{
+    background-position: -540px 0;
+}
+
+.flair-small.flair-leatherworker{
+    background-position: -570px 0;
+}
+
+.flair-small.flair-weaver{
+    background-position: -600px 0;
+}
+
+.flair-small.flair-alchemist{
+    background-position: -630px 0;
+}
+
+.flair-small.flair-culinarian{
+    background-position: -660px 0;
+}
+
+.flair-small.flair-gladiator{
+    background-position: -690px 0;
+}
+
+.flair-small.flair-pugilist{
+    background-position: -720px 0;
+}
+
+.flair-small.flair-marauder{
+    background-position: -750px 0;
+}
+
+.flair-small.flair-lancer{
+    background-position: -780px 0;
+}
+
+.flair-small.flair-archer{
+    background-position: -810px 0;
+}
+
+.flair-small.flair-conjurer{
+    background-position: -840px 0;
+}
+
+.flair-small.flair-thaumaturge{
+    background-position: -870px 0;
+}
+
+.flair-small.flair-arcanist{
+    background-position: -900px 0;
+}
+
+.flair-small.flair-rogue{
+    background-position: -930px 0;
+}
+
+.flair-small.flair-ninja{
+    background-position: -960px 0;
+}
+
+.flair-small.flair-astrologian{
+    background-position: -990px 0;
+}
+
+.flair-small.flair-darkknight{
+    background-position: -1020px 0;
+}
+
+.flair-small.flair-machinist{
+    background-position: -1050px 0;
+}
+
+.flair-small{
+    display: inline-block;
+    background-image: url("assets/images/class-symbols.png");
+    vertical-align: middle;
+    margin-right: 3px;
+    margin-top: -3px;
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 20px;
+    border-width: 0;
+    padding: 0;
+    background-color: transparent;
+    text-indent: -9999px;
+}
