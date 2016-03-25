@@ -1,23 +1,44 @@
-body > div, body > div > div, .main-container{
-    height:100%;
+html, body > div > div, .home-container{
+    height:100% !important;
     font-family: Roboto;
 }
 
-.home-image-container{
-    height:calc(100% - 64px);
-    width:100%;
+@font-face {
+    font-family: 'Eorzean Script';
+    src: url('assets/fonts/Eorzea.ttf');
 }
 
-.home-image-container img{
-    display:block;
+.banner{
+    height:75vh;
+}
+
+.parallax-mirror {
+    z-index:1 !important;
+}
+
+.parallax-mirror img{
+    height:100%;
+}
+
+.parallax-window {
+    min-height:25vh;
+    background: transparent;
 }
 
 .content-block{
-    height:500px;
+    height:700px;
+}
+
+.content-head{
+    height:250px;
+    position:relative;
 }
 
 .footer{
     height:200px;
+}
+
+.large-logo{
 }
 
 .logo{
