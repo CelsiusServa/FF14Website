@@ -1,4 +1,4 @@
-html, body > div > div, .home-container{
+html, body > div > div, .home-container, .content-container{
     height:100% !important;
     font-family: Roboto;
 }
@@ -6,6 +6,10 @@ html, body > div > div, .home-container{
 @font-face {
     font-family: 'Eorzean Script';
     src: url('assets/fonts/Eorzea.ttf');
+}
+
+iframe{
+    border:none !important;
 }
 
 .banner{

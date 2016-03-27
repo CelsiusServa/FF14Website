@@ -1,4 +1,4 @@
-<md-toolbar style="position:relative;">
+<md-toolbar style="position:relative;" ng-style="{ 'background-color': topMenuCtrl.color }">
     <div class="md-toolbar-tools">
         <div ng-click="topMenuCtrl.titleClicked()" layout="row" >
             <img src="assets/images/logo.png" class="logo" >
@@ -9,23 +9,23 @@
         </div>
         <span flex="5"></span>
         <md-button aria-label="Home" class="menu-button"
-                   ng-click="topMenuCtrl.homeClicked()">
+                   ng-click="topMenuCtrl.redirect('/home')">
             Home
         </md-button>
-        <md-button aria-label="Highscores" class="menu-button" ng-disabled="true"
-                   ng-click="topMenuCtrl.highscoresClicked()">
+        <md-button aria-label="Articles" class="menu-button" ng-disabled="true"
+                   ng-click="">
             Articles
         </md-button>
-        <md-button aria-label="Highscores" class="menu-button" ng-disabled="true"
-                   ng-click="topMenuCtrl.highscoresClicked()">
+        <md-button aria-label="Streamers" class="menu-button" ng-disabled="false"
+                   ng-click="topMenuCtrl.redirect('/streamers')">
             Streamers
         </md-button>
-        <md-button aria-label="Highscores" class="menu-button" ng-disabled="true"
-                   ng-click="topMenuCtrl.highscoresClicked()">
+        <md-button aria-label="Guides" class="menu-button" ng-disabled="true"
+                   ng-click="">
             Guides
         </md-button>
         <md-button aria-label="Highscores" class="menu-button" ng-disabled="true"
-                   ng-click="topMenuCtrl.highscoresClicked()">
+                   ng-click="">
             Highscores
         </md-button>
     </div>

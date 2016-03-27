@@ -8,6 +8,8 @@
         var vm = this;
         vm.title = "Sodium Chloride";
 
+        $('.parallax-mirror').remove();
+
         function init(){
         }
 

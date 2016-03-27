@@ -7,6 +7,8 @@
     function controller(highscoreService) {
         var vm = this;
 
+        $('.parallax-mirror').remove();
+
         highscoreService.getHighscores('a1s')
             .then(setHighscores, failedToObtainHighscores);
 

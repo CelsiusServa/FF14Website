@@ -1,0 +1,18 @@
+<div style="color:white; height:20px;" ng-if="ffStreamCtrl.size != 'large'">
+    <div>{{ffStreamCtrl.stream.name}} {{ffStreamCtrl.stream.description}}</div>
+</div>
+<div style="height:calc(100% - 70px); width:100%;" ng-if="!ffStreamCtrl.preview && ffStreamCtrl.stream.status == 1 ">
+    <iframe style="height:100%; width:100%;" ng-src="{{ffStreamCtrl.trustUrl(ffStreamCtrl.stream.url)}}"
+            allowfullscreen></iframe>
+</div>
+<div style="height:calc(100% - 70px); width:100%;" ng-if="ffStreamCtrl.preview || ffStreamCtrl.stream.status == 0">
+    <img style="height:100%; width:100%; cursor: pointer;" ng-click="ffStreamCtrl.goToStream()" ng-src="{{ffStreamCtrl.stream.preview}}">
+</div>
+<div style="color:white; height:50px;" layout="row">
+    <div layout-padding ng-if="ffStreamCtrl.stream.viewers" layout="column">
+        <div>Playing: {{ffStreamCtrl.stream.game}}</div>
+        <div>{{ffStreamCtrl.stream.viewers}} watching</div>
+    </div>
+    <div layout-padding ng-if="!ffStreamCtrl.stream.viewers">Last Online: {{ffStreamCtrl.stream.lastOnline | date: 'medium'}} UTC
+    </div>
+</div>

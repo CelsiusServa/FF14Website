@@ -1,0 +1,14 @@
+<div class="content-container" style="background-color:black;">
+    <ff-top-menu title="mainCtrl.title""></ff-top-menu>
+    <div style="min-height:calc(100vh - 64px); background-color:#311B92; background-size: 30%; background-image: url('assets/images/ramuh_bg.png');
+background-repeat: no-repeat; background-position: right bottom;" layout="column" layout-align="center center" >
+        <div style="font-weight:900; color:white; font-size: 40px;">Streamers
+        </div>
+
+        <div layout="column" layout-align="center start">
+            <div layout="row" layout-align="center center" ng-repeat="streamRow in streamersCtrl.streamRow" >
+                <ff-stream ng-repeat="stream in streamRow" layout-padding style="height:300px; width:300px;" preview="true" streamer="stream.streamer"></ff-stream>
+            </div>
+        </div>
+    </div>
+</div>

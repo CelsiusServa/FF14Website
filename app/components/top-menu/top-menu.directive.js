@@ -6,7 +6,8 @@
             return {
                 restrict: 'E',
                 scope: {
-                    title: '='
+                    title: '=',
+                    color: '='
                 },
                 templateUrl: 'components/top-menu/top-menu.html',
                 controller: ['$location', controller],
@@ -20,16 +21,14 @@
         var vm = this;
 
         vm.titleClicked = function(){
+            $location.search({});
             $location.path('/home');
-        }
+        };
 
-        vm.homeClicked = function(){
-            $location.path('/home');
-        }
-
-        vm.highscoresClicked = function(){
-            $location.path('/raidnet');
-        }
+        vm.redirect = function(path){
+            $location.search({});
+            $location.path(path);
+        };
     }
 }());
 
