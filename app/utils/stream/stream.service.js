@@ -8,7 +8,7 @@
 
         var streamComparisons = [
             {property: 'status', comparison: 'gt'},
-            {property: 'priority', comparison: 'lt'},
+            {property: 'priority', comparison: 'gt'},
             {property: 'viewers', comparison: 'gt'},
             {property: 'lastOnline', comparison: 'gt'},
             {property: 'name', comparison: 'lt'}
@@ -16,8 +16,8 @@
 
         var streamers = [
             {streamer: 'immikazuki', priority: 1},
-            {streamer: 'saenoabes', priority: 0},
-            {streamer: 'joeneverfails', priority: 1}
+            {streamer: 'saenoabes', priority: 1},
+            {streamer: 'joeneverfails', priority: 0}
         ];
 
         return {
