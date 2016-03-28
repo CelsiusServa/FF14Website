@@ -17,7 +17,10 @@
         var streamers = [
             {streamer: 'immikazuki', priority: 1},
             {streamer: 'saenoabes', priority: 1},
+            {streamer: 'case123456', priority: 1},
+            {streamer: 'chankeyez', priority: 1},
             {streamer: 'joeneverfails', priority: 0}
+
         ];
 
         return {
