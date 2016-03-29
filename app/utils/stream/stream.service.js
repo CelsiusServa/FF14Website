@@ -15,13 +15,22 @@
         ];
 
         var streamers = [
-            {streamer: 'immikazuki', priority: 1},
-            {streamer: 'saenoabes', priority: 1},
-            {streamer: 'case123456', priority: 1},
-            {streamer: 'chankeyez', priority: 1},
-            {streamer: 'joeneverfails', priority: 0}
-
+            {streamer: 'immikazuki', ign: 'Yuki Aoyama', fc: 'NaCl', priority: 1},
+            {streamer: 'saenoabes', ign: 'Saeno Abes', fc: 'NaCl', priority: 1},
+            {streamer: 'case123456', ign: 'Death Flare', fc: 'NaCl', priority: 1},
+            {streamer: 'chankeyez', ign: 'White Guy', fc: 'NaCl', priority: 1},
+            {streamer: 'slamuraishaq', ign: 'Bad Manners', fc: 'NaCl', priority: 1},
+            {streamer: 'joeneverfails', ign: 'Joe Never', fc: 'NaCl', priority: 0}
         ];
+
+        var streamerDetails = {
+            immikazuki: {ign: 'Yuki Aoyama', fc: 'NaCl'},
+            saenoabes: {ign: 'Saeno Abes', fc: 'NaCl'},
+            case123456: {ign: 'Death Flare', fc: 'NaCl'},
+            chankeyez: {ign: 'White Guy', fc: 'NaCl'},
+            slamuraishaq: {ign: 'Bad Manners', fc: 'NaCl'},
+            joeneverfails: {ign: 'Joe Never', fc: 'TARP'}
+        };
 
         return {
             getStreams: getStreams,
@@ -39,6 +48,9 @@
                 getStream(s.streamer)
                     .then(function (stream) {
                         stream.priority = s.priority;
+                        var details = streamerDetails[s.streamer];
+                        stream.ign = details.ign;
+                        stream.fc = details.fc;
                         streams.add(stream);
                     })
                     .finally(function () {
@@ -58,13 +70,17 @@
         function getStream(streamer, size, autoplay) {
             var deferred = $q.defer();
 
+            var details = streamerDetails[streamer];
+
             var stream = {
                 streamer: streamer,
                 url: 'http://player.twitch.tv/?channel=' + streamer,
                 status: 0,
                 viewers: '',
                 game: '',
-                preview: 'http://static-cdn.jtvnw.net/jtv_user_pictures/xarth/404_user_150x150.png'
+                preview: 'http://static-cdn.jtvnw.net/jtv_user_pictures/xarth/404_user_150x150.png',
+                ign: details.ign,
+                fc: details.fc
             };
 
             if (!autoplay) {

@@ -1,5 +1,5 @@
 <div style="color:white; height:20px;" ng-if="ffStreamCtrl.size != 'large'">
-    <div>{{ffStreamCtrl.stream.name}} {{ffStreamCtrl.stream.description}}</div>
+    <div>{{ffStreamCtrl.stream.ign}} - {{ffStreamCtrl.stream.fc}}</div>
 </div>
 <div style="height:calc(100% - 70px); width:100%;" ng-if="!ffStreamCtrl.preview && ffStreamCtrl.stream.status == 1 ">
     <iframe style="height:100%; width:100%;" ng-src="{{ffStreamCtrl.trustUrl(ffStreamCtrl.stream.url)}}"
