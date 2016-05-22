@@ -17,13 +17,17 @@
         var streamers = [
             {streamer: 'ilovebuzzcut', ign: 'Puris Bordeaux', fc: 'NaCl', priority: 1},
             {streamer: 'slamuraishaq', ign: 'Bad Manners', fc: 'NaCl', priority: 1},
-            {streamer: 'joeneverfails', ign: 'Joe Never', fc: 'TARP', priority: 0}
+            {streamer: 'khyrou', ign: 'Khyrou Johto', fc: 'NaCl', priority: 1},
+            {streamer: 'joeneverfails', ign: 'Joe Never', fc: 'TARP', priority: 0},
+            {streamer: 'blackmoreknight', ign: 'Ashildr Bloodfury', fc: 'Wyrm', priority: 0}
         ];
 
         var streamerDetails = {
             ilovebuzzcut: {ign: 'Puris Bordeaux', fc: 'NaCl'},
             slamuraishaq: {ign: 'Bad Manners', fc: 'NaCl'},
-            joeneverfails: {ign: 'Joe Never', fc: 'TARP'}
+            khyrou: {ign: 'Khyrou Johto', fc: 'NaCl'},
+            joeneverfails: {ign: 'Joe Never', fc: 'TARP'},
+            blackmoreknight: {ign: 'Ashildr Bloodfury', fc: 'Wyrm'}
         };
 
         return {

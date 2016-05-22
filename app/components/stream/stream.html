@@ -9,10 +9,10 @@
     <img style="height:100%; width:100%; cursor: pointer;" ng-click="ffStreamCtrl.goToStream()" ng-src="{{ffStreamCtrl.stream.preview}}">
 </div>
 <div style="color:white; height:50px;" layout="row">
-    <div layout-padding ng-if="ffStreamCtrl.stream.viewers" layout="column">
+    <div layout-padding ng-if="ffStreamCtrl.stream.status == 1" layout="column">
         <div>Playing: {{ffStreamCtrl.stream.game}}</div>
         <div>{{ffStreamCtrl.stream.viewers}} watching</div>
     </div>
-    <div layout-padding ng-if="!ffStreamCtrl.stream.viewers">Last Online: {{ffStreamCtrl.stream.lastOnline | date: 'medium'}} UTC
+    <div layout-padding ng-if="ffStreamCtrl.stream.status == 0">Last Online: {{ffStreamCtrl.stream.lastOnline | date: 'medium'}} UTC
     </div>
 </div>

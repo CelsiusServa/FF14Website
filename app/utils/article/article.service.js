@@ -25,7 +25,7 @@
                     {
                         type: 'text',
                         text: 'To submit an article please send an e-mail to celsius.serva@gmail.com or contact Celsius Serva in-game.'
-                    },]
+                    }]
             },
         };
 
