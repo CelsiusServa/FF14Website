@@ -42,5 +42,12 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+
 /app/bower_components
 /app/bower_components/*
+.idea/*
+node_modules/*
+.idea/workspace.xml
+.idea/vcs.xml
+.idea/misc.xml
+.idea/misc.xml

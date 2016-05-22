@@ -1,36 +1,50 @@
 <div class="home-container">
     <ff-top-menu title="mainCtrl.title"></ff-top-menu>
-    <div class="parallax-window banner"></div>
     <div style="height:100%">
-        <div class="content-block" style="background-color:#B71C1C; background-size: 50%; background-image: url('assets/images/ifrit_bg.png');
-background-repeat: no-repeat; background-position: right bottom;" layout="row" layout-align="center center">
+        <div class="content-block parallax-window banner"></div>
+        <div class="content-block ifrit-block" layout="row" layout-align="center center">
             <div layout="column" flex-offset="15" flex="15">
                 <img src="assets/images/logo.png" layout-align="center center" class="large-logo">
             </div>
             <div layout="column" flex-offset="15" flex="50">
-                <div style="font-family: 'Eorzean Script'; font-weight:900; color:white; font-size: 40px;">Sodium Chloride
+                <div class="fc-title">Sodium Chloride
                 </div>
-                <div style="font-family: 'Eorzean Script'; font-weight:900; color:white; font-size: 20px;">- Balmung</div>
-                <div style="font-weight:900; color:white; font-size: 20px;">Welcome to the NaCl website. We are currently in development. Please look forward to our new features!</div>
+                <div class="fc-text">- Balmung</div>
+                <div class="fc-text">Welcome to the NaCl website. We are currently in development. Please look forward to our new features!</div>
             </div>
         </div>
         <div id="content1" class="parallax-window content-block"></div>
-        <div class="content-block" style="background-color:#1B5E20; background-size: 50%; background-image: url('assets/images/garuda_bg.png');
-background-repeat: no-repeat; background-position: left bottom;" layout="column" layout-align="center center" >
+        <div class="content-block garuda-block" layout="column" layout-align="center center">
+            <div layout="column" layout-align="center center">
+                <div class="fc-title" layout="row">Newest Articles
+                    <div class="fc-text"></div>
+                </div>
+                <div layout="row" layout-align="center center">
+                    <div ng-repeat="article in homeCtrl.articles"
+                         style="overflow:hidden; max-height:700px; max-width:700px" layout-padding>
+                        <ff-article menu="true" show-nav="false" article-id="article.articleId"></ff-article>
+                    </div>
+                </div>
+                <div style="font-weight:900; color:white; font-size: 40px;">
+                    <md-button class="md-button md-raised md-accent" ng-click="homeCtrl.viewArticles();">
+                        View All Articles
+                    </md-button>
+                </div>
+            </div>
+        </div>
+        <div id="content2" class="parallax-window content-block"></div>
+        <div class="content-block bismarck-block" layout="column" layout-align="center center">
             <div style="font-weight:900; color:white; font-size: 40px;">Recent Streamers
             </div>
             <div layout="row" layout-align="center center">
-                <ff-stream ng-repeat="stream in homeCtrl.streams" layout-padding style="height:500px; width:500px;" preview="true" streamer="stream.streamer"></ff-stream>
+                <ff-stream ng-repeat="stream in homeCtrl.streams" layout-padding style="height:500px; width:500px;"
+                           preview="true" streamer="stream.streamer"></ff-stream>
             </div>
             <div style="font-weight:900; color:white; font-size: 40px;">
                 <md-button class="md-button md-raised md-accent" ng-click="homeCtrl.viewStreamers();">
                     View All Streamers
                 </md-button>
             </div>
-        </div>
-        <div id="content2" class="parallax-window content-block"></div>
-        <div class="content-block" style="background-color:#0D47A1; background-size: 50%; background-image: url('assets/images/bismarck_bg.png');
-background-repeat: no-repeat; background-position: right bottom;" layout="row" layout-align="center center">
         </div>
         <div id="content3" class="parallax-window content-block"></div>
 

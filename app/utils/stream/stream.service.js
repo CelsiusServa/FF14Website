@@ -15,19 +15,13 @@
         ];
 
         var streamers = [
-            {streamer: 'immikazuki', ign: 'Yuki Aoyama', fc: 'NaCl', priority: 1},
-            {streamer: 'saenoabes', ign: 'Saeno Abes', fc: 'NaCl', priority: 1},
-            {streamer: 'case123456', ign: 'Death Flare', fc: 'NaCl', priority: 1},
-            {streamer: 'chankeyez', ign: 'White Guy', fc: 'NaCl', priority: 1},
+            {streamer: 'ilovebuzzcut', ign: 'Puris Bordeaux', fc: 'NaCl', priority: 1},
             {streamer: 'slamuraishaq', ign: 'Bad Manners', fc: 'NaCl', priority: 1},
-            {streamer: 'joeneverfails', ign: 'Joe Never', fc: 'NaCl', priority: 0}
+            {streamer: 'joeneverfails', ign: 'Joe Never', fc: 'TARP', priority: 0}
         ];
 
         var streamerDetails = {
-            immikazuki: {ign: 'Yuki Aoyama', fc: 'NaCl'},
-            saenoabes: {ign: 'Saeno Abes', fc: 'NaCl'},
-            case123456: {ign: 'Death Flare', fc: 'NaCl'},
-            chankeyez: {ign: 'White Guy', fc: 'NaCl'},
+            ilovebuzzcut: {ign: 'Puris Bordeaux', fc: 'NaCl'},
             slamuraishaq: {ign: 'Bad Manners', fc: 'NaCl'},
             joeneverfails: {ign: 'Joe Never', fc: 'TARP'}
         };

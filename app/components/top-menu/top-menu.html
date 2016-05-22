@@ -1,6 +1,6 @@
-<md-toolbar style="position:relative;" ng-style="{ 'background-color': topMenuCtrl.color }">
+<md-toolbar style="position:relative; overflow:hidden" ng-style="{ 'background-color': topMenuCtrl.color }">
     <div class="md-toolbar-tools">
-        <div ng-click="topMenuCtrl.titleClicked()" layout="row" >
+        <div ng-click="topMenuCtrl.titleClicked()" layout="row" style="min-width:230px;" >
             <img src="assets/images/logo.png" class="logo" >
 
             <h2 style="cursor: pointer;" layout-align="column">
@@ -12,8 +12,8 @@
                    ng-click="topMenuCtrl.redirect('/home')">
             Home
         </md-button>
-        <md-button aria-label="Articles" class="menu-button" ng-disabled="true"
-                   ng-click="">
+        <md-button aria-label="Articles" class="menu-button"
+                   ng-click="topMenuCtrl.redirect('/articles')">
             Articles
         </md-button>
         <md-button aria-label="Streamers" class="menu-button" ng-disabled="false"

@@ -1,8 +1,12 @@
-<md-sidenav class="md-sidenav-left md-whiteframe-z2" md-is-locked-open="$mdMedia('gt-lg')" style="position:fixed; top:64px; height:100%;">
-    <md-content>
-        <md-list-item ng-repeat="article in sideNavCtrl.articles" ng-click="sideNavCtrl.articleClicked(article)">
-            <p>{{ article.title}}</p>
-            <md-divider></md-divider>
+<md-sidenav class="side-nav" md-is-locked-open="$mdMedia('gt-md')">
+    <md-content prevent-scroll>
+        <md-list-item ng-repeat="article in sideNavCtrl.articles">
+            <div layout="column" ng-click="sideNavCtrl.articleClicked(article)">
+                <img ng-src="assets/images/{{article.image}}" flex="100" class="md-card-image">
+                <div style="text-align: center; color:whitesmoke" layout="column" layout-align="center center">
+                    <p>{{article.title}}</p>
+                </div>
+            </div>
         </md-list-item>
     </md-content>
 </md-sidenav>

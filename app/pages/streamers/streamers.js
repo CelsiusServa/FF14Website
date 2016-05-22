@@ -12,8 +12,8 @@
         vm.streams = streamService.getStreams()
             .then(function (streams) {
                 vm.streamRow = [];
-                for(var i = 0; i*4 < streams.length; i++){
-                    vm.streamRow.add([streams.slice(i*4, (i*4)+4)]);
+                for(var i = 0; i*3 < streams.length; i++){
+                    vm.streamRow.add([streams.slice(i*3, (i*3)+3)]);
                 }
             });
     }

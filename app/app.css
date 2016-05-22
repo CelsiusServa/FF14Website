@@ -1,5 +1,5 @@
-html, body > div > div, .home-container, .content-container{
-    height:100% !important;
+html, body > div > div, .home-container, .content-container {
+    height: 100% !important;
     font-family: Roboto;
 }
 
@@ -8,63 +8,171 @@ html, body > div > div, .home-container, .content-container{
     src: url('assets/fonts/Eorzea.ttf');
 }
 
-iframe{
-    border:none !important;
+iframe {
+    border: none !important;
 }
 
-.banner{
-    height:75vh;
+.banner {
+    height: 75vh;
 }
 
 .parallax-mirror {
-    z-index:1 !important;
+    z-index: 1 !important;
 }
 
-.parallax-mirror img{
-    height:100%;
+.parallax-mirror img {
+    height: 100%;
 }
 
 .parallax-window {
-    min-height:25vh;
+    min-height: 25vh;
     background: transparent;
 }
 
-.content-block{
-    height:700px;
+.content-block {
+    height: 700px;
 }
 
-.content-head{
-    height:250px;
-    position:relative;
+.content-head {
+    height: 250px;
+    position: relative;
 }
 
-.footer{
-    height:200px;
+.footer {
+    height: 200px;
 }
 
-.large-logo{
+.large-logo {
 }
 
-.logo{
-    margin-right:10px;
-    height:4.2rem;
-    width:4.2rem;
+.logo {
+    margin-right: 10px;
+    height: 4.2rem;
+    width: 4.2rem;
 }
 
-.menu-button{
-    line-height:65px;
-    border-radius:0 !important;
+.menu-button {
+    line-height: 65px;
+    border-radius: 0 !important;
 }
 
-.highscore div{
-    text-align:center;
+.highscore div {
+    text-align: center;
 }
 
-.highscore:hover{
+.highscore:hover {
     background-color: #1b0c80;
 }
 
-/*.banner{*/
-/*width:100%;*/
-/*height:100%;*/
-/*}*/
+@media (max-width: 960px) {
+    .side-nav {
+        visibility: hidden;
+    }
+}
+
+.side-nav {
+    position: absolute !important;
+    top: 64px;
+    left: 70%;
+    min-height: calc(100vh - 64px);
+    min-width: 0 !important;
+    max-width: 999999px !important;
+    width: auto !important;
+    background-color: transparent;
+}
+
+.side-nav md-content {
+    background-color: transparent;
+}
+
+ff-article md-content,
+ff-article md-card {
+    color: #bcbcbc;
+    background-color: transparent;
+}
+
+.side-nav a.md-button.md-default-theme:not([disabled]):hover,
+.side-nav a.md-button:not([disabled]):hover,
+.side-nav .md-button.md-default-theme:not([disabled]):hover,
+.side-nav .md-button:not([disabled]):hover {
+    background-color: transparent !important;
+}
+
+.eorzean-text {
+    font-family: 'Eorzean Script';
+}
+
+.fc-title {
+    font-weight: 900;
+    color: white;
+    font-size: 40px;
+}
+
+.fc-text {
+    font-weight: 900;
+    color: white;
+    font-size: 20px;
+}
+
+.ifrit-block {
+    background-color: #B71C1C;
+    background-size: 50%;
+    background-image: url('assets/images/ifrit_bg.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+.garuda-block {
+    background-color: #1B5E20;
+    background-size: 50%;
+    background-image: url('assets/images/garuda_bg.png');
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+
+.bismarck-block {
+    background-color: #0D47A1;
+    background-size: 50%;
+    background-image: url('assets/images/bismarck_bg.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+.ramuh-block{
+    background-color:#311B92;
+    background-size: 30%;
+    background-image: url('assets/images/ramuh_bg.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+.leviathan-block{
+    background-color:#0D47A1;
+    background-size: 30%;
+    background-image: url('assets/images/leviathan_bg.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+.dark-block {
+    background-color: #232323;
+}
+
+.no-scroll > ::-webkit-scrollbar {
+    width: 0;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(100,0,0,0.3);
+    border-radius: 10px;
+    visibility: hidden;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(255,255,255,5);
+}

@@ -1,0 +1,14 @@
+<div class="content-container" style="background-color:black;">
+    <ff-top-menu title="mainCtrl.title" color="'#2196F3'"></ff-top-menu>
+    <div class="bismarck-block" style="min-height:calc(100vh - 64px);" layout="column" layout-align="center center" >
+        <div style="font-weight:900; color:white; font-size: 40px;">Articles
+        </div>
+        <div layout="column" layout-align="center start">
+            <div layout="row" layout-align="center center" ng-repeat="articleRow in articlesCtrl.articlesRow">
+                <div ng-repeat="article in articleRow" style="height:350px; width:350px; overflow:hidden;" layout-padding>
+                    <ff-article menu="true" show-nav="false" article-id="article.articleId"></ff-article>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

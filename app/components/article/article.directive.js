@@ -6,19 +6,34 @@
             return {
                 restrict: 'E',
                 scope: {
-                    articleId: '='
+                    articleId: '=',
+                    showNav: '=',
+                    menu: '='
                 },
                 templateUrl: 'components/article/article.html',
-                controller: controller,
+                controller: ['$location', 'articleService', controller],
                 controllerAs: 'ffArticleCtrl',
                 bindToController: true
             };
         });
 
-    function controller() {
+    function controller($location, articleService) {
         var vm = this;
 
-        console.log(this.articleId);
+        if(vm.articleId){
+            articleService.getArticle(vm.articleId)
+                .then(function (article) {
+                    vm.article = article;
+                })
+                .catch(function (){
+                    //error
+                });
+        }
+
+        vm.goToArticle = function(){
+            $location.path("/article").search({articleId: vm.articleId});
+        };
+
     }
 }());
 

@@ -26,6 +26,11 @@
                 controller: 'ArticleController',
                 controllerAs: 'articleCtrl'
             })
+            .when('/articles', {
+                templateUrl: 'pages/articles/articles.html',
+                controller: 'ArticlesController',
+                controllerAs: 'articlesCtrl'
+            })
             .when('/stream', {
                 templateUrl: 'pages/stream/stream.html',
                 controller: 'StreamController',
