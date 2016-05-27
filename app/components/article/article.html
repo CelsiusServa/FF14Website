@@ -4,7 +4,7 @@
         <md-content layout-padding>
             <h1 ng-show="!ffArticleCtrl.menu" layout-padding style="text-align: center" ng-style="{ 'color': ffArticleCtrl.menu ? 'white' : '' }">{{ffArticleCtrl.article.title}}</h1>
             <div ng-show="ffArticleCtrl.menu" layout-padding ng-style="{ 'color': ffArticleCtrl.menu ? 'white' : '' }">{{ffArticleCtrl.article.title}}</div>
-            <img ng-src="assets/images/{{ffArticleCtrl.article.image}}" class="md-card-image">
+            <img ng-src="assets/images/{{ffArticleCtrl.article.image}}" class="md-card-image" style="height: {{ffArticleCtrl.height + 'px'}}; width: {{ffArticleCtrl.width + 'px'}}">
             <div layout-padding ng-style="{ 'color': ffArticleCtrl.menu ? 'white' : '' }">{{ffArticleCtrl.article.author}} - {{ffArticleCtrl.article.date | date : 'MMM d yyyy hh:mm a'}}</div>
             <div flex-offset="10" flex="80" ng-show="!ffArticleCtrl.menu">
                 <div ng-repeat="block in ffArticleCtrl.article.blocks">

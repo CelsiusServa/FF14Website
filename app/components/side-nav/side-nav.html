@@ -2,7 +2,7 @@
     <md-content prevent-scroll>
         <md-list-item ng-repeat="article in sideNavCtrl.articles">
             <div layout="column" ng-click="sideNavCtrl.articleClicked(article)">
-                <img ng-src="assets/images/{{article.image}}" flex="100" class="md-card-image">
+                <img ng-src="assets/images/{{article.image}}" style="width:540px; height:270px;" flex="100" class="md-card-image">
                 <div style="text-align: center; color:whitesmoke" layout="column" layout-align="center center">
                     <p>{{article.title}}</p>
                 </div>

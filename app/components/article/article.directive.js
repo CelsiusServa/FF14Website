@@ -8,7 +8,9 @@
                 scope: {
                     articleId: '=',
                     showNav: '=',
-                    menu: '='
+                    menu: '=',
+                    height: '=',
+                    width: '='
                 },
                 templateUrl: 'components/article/article.html',
                 controller: ['$location', 'articleService', controller],
