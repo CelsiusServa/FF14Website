@@ -51,6 +51,7 @@
                         stream.fc = details.fc;
                         streams.add(stream);
                     })
+                    .catch({})
                     .finally(function () {
                         streamCount++;
                         if (streamCount == streamers.length) {
@@ -117,6 +118,9 @@
                         stream.description = streamData.channel.status;
                         deferred.resolve(stream);
                     }
+                })
+                .error(function(){
+                    deferred.reject();
                 });
             return deferred.promise;
         }
