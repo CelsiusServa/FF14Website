@@ -1,10 +1,11 @@
 <div style="border:0 !important" ng-style="{'cursor': ffArticleCtrl.menu ? 'pointer' : ''}" layout="row" ng-if="ffArticleCtrl.article" ng-click="ffArticleCtrl.goToArticle(article.articleId)">
-    <md-card style="margin:0; box-shadow:none;" ng-style="{'min-height': ffArticleCtrl.menu ? '0' : 'calc(100vh - 64px)'
-        }" flex-sm="100" flex-md="100" ng-class="{ 'flex-70': ffArticleCtrl.showNav }">
-        <md-content layout-padding>
+    <md-card style="margin:0; box-shadow:none;"
+             ng-style="{'min-height': ffArticleCtrl.menu ? '0' : 'calc(100vh - 64px)', 'height': ffArticleCtrl.menu ? '' : 'calc(100vh - 64px)'}"
+             flex-sm="100" flex-md="100" ng-class="{ 'flex-70': ffArticleCtrl.showNav }">
+        <md-content layout-padding >
             <h1 ng-show="!ffArticleCtrl.menu" layout-padding style="text-align: center" ng-style="{ 'color': ffArticleCtrl.menu ? 'white' : '' }">{{ffArticleCtrl.article.title}}</h1>
             <div ng-show="ffArticleCtrl.menu" layout-padding ng-style="{ 'color': ffArticleCtrl.menu ? 'white' : '' }">{{ffArticleCtrl.article.title}}</div>
-            <img ng-src="assets/images/{{ffArticleCtrl.article.image}}" class="md-card-image" style="height: {{ffArticleCtrl.height + 'px'}}; width: {{ffArticleCtrl.width + 'px'}}">
+            <img ng-src="assets/images/{{ffArticleCtrl.article.image}}" class="md-card-image" style="max-height: {{ffArticleCtrl.height + 'px'}}; max-width: {{ffArticleCtrl.width + 'px'}}">
             <div layout-padding ng-style="{ 'color': ffArticleCtrl.menu ? 'white' : '' }">{{ffArticleCtrl.article.author}} - {{ffArticleCtrl.article.date | date : 'MMM d yyyy hh:mm a'}}</div>
             <div flex-offset="10" flex="80" ng-show="!ffArticleCtrl.menu">
                 <div ng-repeat="block in ffArticleCtrl.article.blocks">
