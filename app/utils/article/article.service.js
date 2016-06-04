@@ -96,7 +96,7 @@
                 blocks: [
                     {
                         type: 'text',
-                        text: 'After a long time and through computer breakdowns and video game conferences amongst other raid down time, Team Caesium Auride(golden salt) clears A8S!'
+                        text: 'After a long time and through computer breakdowns and video game conferences amongst other raid down time, Team Caesium Auride(golden salt) clears A8S!(Server 5th)'
                     },
                     {
                         type: 'text',
