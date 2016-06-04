@@ -87,6 +87,40 @@
                         text: 'Last but def not least, on the 18th/19th of June we have a Nidhogg EX learning/clear event!  Those of us in FC statics are taking time out of our busy *cough* raiding lives to help other fc members learn/clear Nidhogg EX so we don’t have to all suffer in Party Finder \o/ Message Ka Lin in game for more information and to reserve a spot!'
                     }]
             },
+            teamCaesiumAurideClearsa8s: {
+                title: 'Team Caesium Auride Clears A8S',
+                articleId: 'teamCaesiumAurideClearsa8s',
+                author: 'Celsius Serva',
+                image: 'final-fantasy-xiv-caesium-auride-a8s-clear.jpg',
+                date: Date.parse("6/4/2016 11:10 AM"),
+                blocks: [
+                    {
+                        type: 'text',
+                        text: 'After a long time and through computer breakdowns and video game conferences amongst other raid down time, Team Caesium Auride(golden salt) clears A8S!'
+                    },
+                    {
+                        type: 'text',
+                        text: 'Ashildr Bloodfury(Wyrm, <span class="flair-small flair-paladin"></span>), ' +
+                        'Licca Skelburg(NaCl, <span class="flair-small flair-warrior"></span>), ' +
+                        'Celsius Serva(NaCl, <span class="flair-small flair-scholar"></span>), ' +
+                        'Thatyani Robbi(-HEC-, <span class="flair-small flair-whitemage"></span>), ' +
+                        'Jara\'hal Noykin(CC, <span class="flair-small flair-monk"></span>), ' +
+                        'Joe Never(TARP, <span class="flair-small flair-dragoon"></span>), ' +
+                        'Purgatory Blackflame(NaCl, <span class="flair-small flair-blackmage"></span>), ' +
+                        'Vyncent Fairclough(NaCl, <span class="flair-small flair-machinist"></span>)'
+                    },
+                    {
+                        type: 'twitchVideo',
+                        url: 'https://player.twitch.tv/?video=v70405993&autoplay=false',
+                        text: '<p style="color:red; font-weight:bold;">WARNING, VERY LOUD</p>'
+                    },
+                    {
+                        type: 'text',
+                        text: 'Watch Joe Never at ' +
+                        '<a style="color:white" href="http://sodiumchloride-nacl.rhcloud.com/#/stream?streamer=joeneverfails">http://sodiumchloride-nacl.rhcloud.com/#/stream?streamer=joeneverfails</a> or' +
+                        ' <a style="color:white" href="https://www.twitch.tv/joeneverfails">https://www.twitch.tv/joeneverfails</a>  '
+                    }]
+            },
         };
 
         return {

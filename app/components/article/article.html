@@ -9,7 +9,9 @@
             <div layout-padding ng-style="{ 'color': ffArticleCtrl.menu ? 'white' : '' }">{{ffArticleCtrl.article.author}} - {{ffArticleCtrl.article.date | date : 'MMM d yyyy hh:mm a'}}</div>
             <div flex-offset="10" flex="80" ng-show="!ffArticleCtrl.menu">
                 <div ng-repeat="block in ffArticleCtrl.article.blocks">
-                    <p ng-show="block.type == 'text'">{{block.text}}</p>
+                    <p ng-bind-html="block.text | trustedHtml" ng-show="block.type == 'text'"></p>
+                    <p ng-bind-html="block.text | trustedHtml " ng-show="block.type == 'twitchVideo'"></p>
+                    <iframe class="twitch-video" src="{{block.url | trustedUrl}}" ng-show="block.type == 'twitchVideo'" allowfullscreen></iframe>
                 </div>
             </div>
         </md-content>
